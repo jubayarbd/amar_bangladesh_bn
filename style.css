@@ -1,0 +1,303 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+header{
+    background-image: url(images/bd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar{
+    padding: 1% 10%;
+    background-color: rgba(0,0,0,0.3);
+}
+.navbar-brand{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.navbar-icon{
+    color: white;
+}
+.nav-link{
+    color: #fff;
+    margin: 10px;
+    transition: .4s;
+    font-weight: 600;
+}
+.nav-link:hover{
+    transform: scale(1.2);
+    color: #fff;
+    text-decoration: underline;
+}
+.banner-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.banner-contents h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+.banner-contents h1{
+    margin: 30px 0 20px 0;
+    font-size: 65px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+}
+.banner-contents p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+.banner-contents a{
+    padding: 12px 30px;
+    margin: 5px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 1s ease;
+}
+.banner-contents .btnone{
+    background: #fff;
+    color: #000;
+}
+.btnone:hover{
+    background: #00b894;
+    color: #fff;
+}
+.banner-contents .btntwo{
+    background: #00b894;
+    color: #fff;
+}
+.btntwo:hover{
+    background: #fff;
+    color: #000;
+}
+.change-content::after{
+    content: '';
+    animation: changetext 15s infinite ease;
+    color: #00b894;
+}
+@keyframes changetext{
+    0%{content: "তাজহাট রাজবাড়ী";}
+    20%{content: "সুন্দরবন";}
+    40%{content: "কক্সবাজার";}
+    60%{content: "পাহাড়পুর";}
+    80%{content: "মহাস্থানগড়";}
+    90%{content: "ষাট গম্বুজ মসজিদ";}
+	100%{content: "তাজহাট রাজবাড়ী";}
+    
+}
+
+/* header ends */
+
+/* main section  */
+
+/* features starts */
+#features{
+    padding: 80px 0;
+    /* background: #7BACB8; */
+}
+.title::before{
+    content: '';
+    background: #20385A;
+    height: 5px;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    transform: translateY(63px);
+}
+.title::after{
+    content: '';
+    background: #20385A;
+    height: 10px;
+    width: 50px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);
+}
+.features-col{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+    transition: 0.4s;
+}
+.features-col:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 6px 5px black;
+}
+.features-col img{
+    width: 80px;
+    margin: 15px 0;
+}
+
+
+
+
+/* features ends */
+/* places  */
+#places{
+    padding: 80px 0;
+    /* background: #4c88ad; */
+}
+#places .row{
+    margin: 100px;
+}
+.common-img img{
+    border-radius: 10px;
+    width: 100%;
+}
+.place-content{
+    margin: 100px 0;
+}
+.place-hr{
+    margin: 30px 0;
+    border: solid 3px black;
+    border-style: dotted;
+    border-bottom: none;
+}
+/* places ends */
+/* social media  */
+#social-media{
+    background: #f8f9fa;
+    padding: 100px 0;
+}
+#social-media p{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.social-icons img{
+    width: 60px;
+    transition: .5s;
+}
+.social-icons img:hover{
+    transform: translateY(-10px);
+}
+/* social media ends */
+/* Contacat */
+#contact{
+    background-color: #17273d;
+    color: white;
+}
+#contact .container{
+    width: 1040px;
+}
+.footer-box{
+    margin: 20px 0;
+}
+.footer-box .fa{
+    margin-right: 8px;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    /* background-image: linear-gradient(to right, #a517ba,#5f1782); */
+}
+.footer-box .form-control{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+}
+.footer-box .btn-primary{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+}
+.hr-2{
+    background-color: #fff;
+}
+/* Contacat ends */
+
+
+/* main section ends */
+
+/* footer starts  */
+footer{
+    background: #17273d;
+    padding: 1% 10%;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+footer a{
+    color: white;
+    margin: 0 10px;
+}
+footer a:hover{
+    color: black;
+    text-decoration: none;
+}
+footer a:hover{
+    color: black;
+    text-decoration: none;
+}
+/* footer ends  */
+
+
+
+
+
+
+
+
+
+/* For Mobile */
+@media (max-width:768px){
+    .nav-link{
+        background: rgba(0, 0, 0, 0.26);
+        border-radius: 5px;
+    }
+    .nav-link:hover{
+        text-decoration: none;
+    }
+    .banner-contents h3{
+        font-size: 25px;
+        font-weight: 200;
+        letter-spacing: 2px;
+    }
+    .banner-contents h1{
+        font-size: 55px;
+        font-weight: 600;
+    }
+    .banner-contents p{
+        font-size: 20px;
+        word-spacing: 1.2px;
+    }
+    .banner-contents a{
+        margin: 3px;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.8px;
+    }
+    .place-content{
+        margin: 10px 0;
+    }
+    #contact .container{
+        width: 100%;
+        margin-left: 40px;
+    }
+}
